@@ -48,14 +48,14 @@
  * .----------------------------------------------------------------------------------------------------------------------------------.
  */
                         bindings = <
-&kp  FI_GRAVE    &kp  FI_N1    &kp  FI_N2     &kp  FI_N3     &kp  FI_N4    &kp  FI_N5                                                                        &kp  FI_N6  &kp  FI_N7    &kp  FI_N8     &kp  FI_N9    &kp  FI_N0       &kp  PSCRN
-&kp  TAB      &kp  FI_Q     &kp  FI_W      &kp  FI_E      &kp  FI_R     &kp  FI_T                                                                         &kp  FI_Y   &kp  FI_U     &kp  FI_I      &kp  FI_O     &kp  FI_P        &kp  BSLH
-&lt HYPER ESC &kp  FI_A     &kp  FI_S      &kp  FI_D      &kp  FI_F     &kp  FI_G                                                                         &kp  FI_H   &kp  FI_J     &kp  FI_K      &kp  FI_L     &kp  FI_SEMI     &kp  SQT
-&kp  LSHFT    &kp  FI_Z     &kp  FI_X      &kp  FI_C      &kp  FI_V     &kp  FI_B             &kp  DEL    &kp  PG_DN    &kp  PG_UP  &kp  HOME             &kp  FI_N   &kp  FI_M     &kp  FI_COMMA  &kp  FI_DOT   &kp  FI_SLASH    &mt  RSHFT ENTER
+&kp  FI_SQT    &kp  FI_N1    &kp  FI_N2     &kp  FI_N3     &kp  FI_N4    &kp  FI_N5                                                                        &kp  FI_N6  &kp  FI_N7    &kp  FI_N8     &kp  FI_N9    &kp  FI_N0       &kp  PSCRN
+&kp  TAB      &kp  FI_Q     &kp  FI_W      &kp  FI_E      &kp  FI_R     &kp  FI_T                                                                         &kp  FI_Y   &kp  FI_U     &kp  FI_I      &kp  FI_O     &kp  FI_P        &kp  FI_UMLAUT
+&lt HYPER ESC &kp  FI_A     &kp  FI_S      &kp  FI_D      &kp  FI_F     &kp  FI_G                                                                         &kp  FI_H   &kp  FI_J     &kp  FI_K      &kp  FI_L     &kp  FI_O_UMLAUT &kp  FI_A_UMLAUT
+&kp  LSHFT    &kp  FI_Z     &kp  FI_X      &kp  FI_C      &kp  FI_V     &kp  FI_B             &kp  DEL    &kp  PG_DN    &kp  PG_UP  &kp  HOME             &kp  FI_N   &kp  FI_M     &kp  FI_COMMA  &kp  FI_DOT   &kp  FI_MINUS    &mt  RSHFT ENTER
 &kp  LCTRL    &kp LALT   &kp  LMETA  &kp  LOWER                      &kp LMETA &kp  FI_SPACE  &mo  LOWER    &mo  RAISE  &kp  BSPC &kp  RALT                       &kp  LEFT   &kp  DOWN  &kp  UP       &kp  RIGHT
                         >;
                 };
-
+0987654321
                 lower_layer {
 /* QWERTY
  * .----------------------------------------------------------------------------------------------------------------------------------.
