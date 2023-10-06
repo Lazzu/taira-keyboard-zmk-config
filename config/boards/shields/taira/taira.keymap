@@ -24,6 +24,7 @@
                 ltgt: ltgt {
                         compatible = "zmk,behavior-mod-morph";
                         label = "LTGTPIPE";
+                        #binding-cells = <0>;
                         bindings = <&kp FI_LT>, <&kp FI_GT>;
                         mods = <(MOD_LSFT|MOD_RSFT)>;
                 };
@@ -31,6 +32,7 @@
                 ltgtpipe: ltgtpipe {
                         compatible = "zmk,behavior-mod-morph";
                         label = "LTGTPIPE";
+                        #binding-cells = <0>;
                         bindings = <&ltgt>, <&kp FI_PIPE>;
                         mods = <(MOD_LGUI)>;
                 };
