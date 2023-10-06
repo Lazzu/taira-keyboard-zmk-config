@@ -42,7 +42,7 @@
  * |-------------+------+------+------+------+------+------+-------+-+-------+-------+------+------+------+------+------+------+------|
  * | Tab  |   A  |   S  |   D  |   F  |   G  |                                              |   H  |   J  |   K  |   L  |   ;  |  '   |
  * |-------------+------+------+------+------+------+------+-------+-+-------+-------+------+------+------+------+------+------+------|
- * | Shift|   Z  |   X  |   C  |   V  |   B  |      | Del  | PGDN  | | PGUP  | Home  |      |   N  |   M  |   ,  |   .  |   /  | Shift|
+ * | Shift|   Z  |   X  |   C  |   V  |   B  |      | Del  | PGDN  | | PGUP  | Home  |      |   N  |   M  |   ,  |   .  |   -  | Shift|
  * |-------------+------+------+------+------+------+------+-------+-+-------+-------+------+------+------+------+------+------+------|
  * | Ctrl | Alt  | Meta | Lower|             | Lower| Space| Lower | | Raise | Enter | RAlt |             | LEFT | DOWN | UP   | RIGHT|
  * .----------------------------------------------------------------------------------------------------------------------------------.
@@ -63,7 +63,7 @@
  * |-------------+------+------+------+------+------+------+-------+-+-------+-------+------+------+------+------+------+------+------|
  * | ESC  |   1  |   2  |   3  |   4  |   5  |                                              |   6  |   7  |   8  |   9  |   0  |  F12 |
  * |-------------+------+------+------+------+------+------+-------+-+-------+-------+------+------+------+------+------+------+------|
- * | Tab  |   !  |   "  |   #  |   ¤  |   %  |                                              |   &  |   /  |   (  |   )  |   =  |      |
+ * | Tab  |   !  |   "  |   #  |   \  |   %  |                                              |   &  |   /  |   (  |   )  |   =  |      |
  * |-------------+------+------+------+------+------+------+-------+-+-------+-------+------+------+------+------+------+------+------|
  * | <|>  |   =  |   -  |   (  |   [  |   {  |      |  Cut |  Copy | |  Cut  | Paste |      |   }  |   ]  |   )  |   +  |   _  |      |
  * |-------------+------+------+------+------+------+------+-------+-+-------+-------+------+------+------+------+------+------+------|
@@ -73,8 +73,8 @@
                         bindings = <
 &none          &kp  F1      &kp  F2      &kp  F3     &kp  F4     &kp  F5                                                                        &kp  F6    &kp  F7    &kp  F8     &kp  F9    &kp  F10      &kp  F11
 &kp  GRAVE     &kp  FI_N1      &kp  FI_N2      &kp  FI_N3     &kp  FI_N4     &kp  FI_N5                                                                        &kp  FI_N6    &kp  FI_N7    &kp  FI_N8     &kp  FI_N9    &kp  FI_N0       &kp  F12
-&kp  LS(GRAVE) &kp LS(N1)   &kp  LS(N2)  &kp  LS(N3) &kp  LS(N4) &kp  LS(N5)                                                                    &kp LS(N6) &kp LS(N7) &kp LS(N8)  &kp LS(N9) &kp  LS(N0)   &none
-&kp LT         &kp FI_EQUAL    &kp FI_MINUS    &kp  FI_LPAR   &kp  FI_LBKT   &kp  FI_LBRC          &kp LC(X)   &kp LC(C)     &kp LC(X)   &kp LC(V)             &kp FI_RBRC   &kp FI_RBKT   &kp FI_RPAR    &kp FI_PLUS   &kp  FI_UNDER    &none
+&kp  LS(GRAVE) &kp LS(N1)   &kp  LS(N2)  &kp  LS(N3) &kp  FI_BSLH &kp  LS(N5)                                                                    &kp LS(N6) &kp LS(N7) &kp LS(N8)  &kp LS(N9) &kp  LS(N0)   &none
+&kp FI_LT         &kp FI_EQUAL    &kp FI_MINUS    &kp  FI_LPAR   &kp  FI_LBKT   &kp  FI_LBRC          &kp LC(X)   &kp LC(C)     &kp LC(X)   &kp LC(V)             &kp FI_RBRC   &kp FI_RBKT   &kp FI_RPAR    &kp FI_PLUS   &kp  FI_UNDER    &none
 &trans         &trans       &trans       &trans                           &trans    &trans      &trans        &trans      &trans    &trans                            &trans      &trans     &trans        &trans
                         >;
                 };
@@ -96,8 +96,8 @@
                         bindings = <
 &none          &kp  F1      &kp  F2      &kp  F3     &kp  F4     &kp  F5                                                                        &kp  F6    &kp  F7    &kp  F8     &kp  F9    &kp  F10      &kp  F11
 &kp  GRAVE     &kp  FI_N1      &kp  FI_N2      &kp  FI_N3     &kp  FI_N4     &kp  FI_N5                                                                        &kp  FI_N6    &kp  FI_N7    &kp  FI_N8     &kp  FI_N9    &kp  FI_N0       &kp  F12
-&kp  LS(GRAVE) &kp LS(N1)   &kp  LS(N2)  &kp  LS(N3) &kp  LS(N4) &kp  LS(N5)                                                                    &kp LS(N6) &kp LS(N7) &kp LS(N8)  &kp LS(N9) &kp  LS(N0)   &none
-&kp LT         &kp FI_EQUAL    &kp FI_MINUS    &kp  FI_LPAR   &kp  FI_LBKT   &kp  FI_LBRC          &kp LC(X)   &kp LC(C)     &kp LC(X)   &kp LC(V)             &kp FI_RBRC   &kp FI_RBKT   &kp FI_RPAR    &kp FI_PLUS   &kp  FI_UNDER    &none
+&kp  LS(GRAVE) &kp LS(N1)   &kp  LS(N2)  &kp  LS(N3) &kp  FI_BSLH &kp  LS(N5)                                                                    &kp LS(N6) &kp LS(N7) &kp LS(N8)  &kp LS(N9) &kp  LS(N0)   &none
+&kp FI_LT         &kp FI_EQUAL    &kp FI_MINUS    &kp  FI_LPAR   &kp  FI_LBKT   &kp  FI_LBRC          &kp LC(X)   &kp LC(C)     &kp LC(X)   &kp LC(V)             &kp FI_RBRC   &kp FI_RBKT   &kp FI_RPAR    &kp FI_PLUS   &kp  FI_UNDER    &none
 &trans         &trans       &trans       &trans                           &trans    &trans      &trans        &trans      &trans    &trans                            &trans      &trans     &trans        &trans
                         >;
                 };
