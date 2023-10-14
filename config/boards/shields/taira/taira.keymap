@@ -27,13 +27,13 @@
                 compatible = "zmk,conditional-layers";
 
                 tri_layer {
-                        if-layers  = <1 2>;
-                        then-layer = <3>;
+                        if-layers  = <LOWER RAISE>;
+                        then-layer = <ADJUST>;
                 };
 
                 mac_tri_layer {
-                        if-layers  = <7 8>;
-                        then-layer = <3>;
+                        if-layers  = <MACLOW MACRAI>;
+                        then-layer = <ADJUST>;
                 };
         };
 
@@ -116,13 +116,7 @@
  * |      |      |      |      |             |      |      |       | |       |       |      |             |      |      |      |      |
  * .----------------------------------------------------------------------------------------------------------------------------------.
  */
-                        bindings = <
-&kp FI_ONE_HALF  &none    &none    &none     &none    &none                                                  &none      &none     &none      &none      &none   &none
-&kp GRAVE        &kp F1   &kp F2   &kp  F3   &kp F4   &none                                                  &kp PG_UP  &kp UP    &kp PG_DW  &kp INS    &none   &none
-&kp LS(GRAVE)    &kp F5   &kp F6   &kp  F7   &kp F8   &none                                                  &kp LEFT   &kp DOWN  &kp RIGHT  &kp DEL    &none   &none
-&kp FI_LT        &kp F9   &kp F10  &kp  F11  &kp F12  &none          &trans  &trans  &trans  &trans          &none      &none     &none      &none      &none   &none
-&trans           &trans   &trans   &trans                    &trans  &trans  &trans  &trans  &trans  &trans                       &trans     &trans     &trans  &trans
-                        >;
+                        bindings = <&kp FI_ONE_HALF  &none    &none    &none     &none    &none                                                  &none      &none     &none      &none      &none   &none &kp GRAVE        &kp F1   &kp F2   &kp  F3   &kp F4   &none                                                  &kp PG_UP  &kp UP    &kp PG_DW  &kp INS    &none   &none &kp LS(GRAVE)    &kp F5   &kp F6   &kp  F7   &kp F8   &none                                                  &kp LEFT   &kp DOWN  &kp RIGHT  &kp DEL    &none   &none &kp FI_LT        &kp F9   &kp F10  &kp  F11  &kp F12  &none          &trans  &trans  &trans  &trans          &none      &none     &none      &none      &none   &none &trans           &trans   &trans   &trans                    &trans  &trans  &trans  &trans  &trans  &trans                       &trans     &trans     &trans  &trans>;
                 };
 
                 adjust_layer {
