@@ -14,11 +14,9 @@
 #define LOWER   1
 #define RAISE   2
 #define ADJUST  3
-#define HYPER   4
-#define GAME    5
-#define MAC     6
-#define MACLOW  7
-#define MACRAI  8
+#define MAC     4
+#define MACLOW  5
+#define MACRAI  6
 
 #define HYPR(KC) LC(LS(LA(LG(KC))))
 
@@ -142,39 +140,6 @@
                         >;
                 };
 
-                hyper_layer {
-/* QWERTY
- * .----------------------------------------------------------------------------------------------------------------------------------.
- * |  `   |   1  |   2  |   3  |   4  |   5  |                                              |   6  |   7  |   8  |   9  |   0  | PScr |
- * |-------------+------+------+------+------+------+------+-------+-+-------+-------+------+------+------+------+------+------+------|
- * | ESC  |   Q  |   W  |   E  |   R  |   T  |                                              |   Y  |   U  |   I  |   O  |   P  |  \   |
- * |-------------+------+------+------+------+------+------+-------+-+-------+-------+------+------+------+------+------+------+------|
- * | Tab  |   A  |   S  |   D  |   F  |   G  |                                              |   H  |   J  |   K  |   L  |   ;  |  '   |
- * |-------------+------+------+------+------+------+------+-------+-+-------+-------+------+------+------+------+------+------+------|
- * | Shift|   Z  |   X  |   C  |   V  |   B  |      | Del  | PGDN  | | PGUP  | Home  |      |   N  |   M  |   ,  |   .  |   /  | Shift|
- * |-------------+------+------+------+------+------+------+-------+-+-------+-------+------+------+------+------+------+------+------|
- * | Ctrl | Alt  | Meta | Alt  |             | Meta | Space| Lower | | Raise | Enter | RAlt |             | LEFT | DOWN | UP   | RIGHT|
- * .----------------------------------------------------------------------------------------------------------------------------------.
- */
-                        bindings = <
-&trans        &trans     &trans      &trans      &trans      &trans                                                                         &trans   &trans     &trans      &trans     &trans        &none
-&trans        &trans     &kp HYPR(W) &trans      &trans      &trans                                                                         &trans   &trans     &trans      &trans     &trans        &none
-&trans        &trans     &trans      &trans      &kp HYPR(F) &trans                                                                         &kp LEFT &kp DOWN   &kp UP      &kp RIGHT  &trans        &none
-&trans        &trans     &trans      &trans      &trans      &trans             &trans      &trans        &trans      &trans                &trans   &trans     &trans      &trans     &trans        &none
-&trans        &trans     &trans      &trans                           &trans    &kp HYPR(SPACE)       &trans        &trans      &trans    &trans                          &trans      &trans     &trans        &none
-                        >;
-                };
-
-                game_layer {
-                        bindings = <
-&kp  GRAVE    &kp  N1    &kp  N2     &kp  N3     &kp  N4    &kp  N5                                                                        &kp  N6  &kp  N7    &kp  N8     &kp  N9    &kp  N0       &kp  PSCRN
-&kp  TAB      &kp  Q     &kp  W      &kp  E      &kp  R     &kp  T                                                                         &kp  Y   &kp  U     &kp  I      &kp  O     &kp  P        &kp  BSLH
-&kp  ESC      &kp  A     &kp  S      &kp  D      &kp  F     &kp  G                                                                         &kp  H   &kp  J     &kp  K      &kp  L     &kp  SEMI     &kp  SQT
-&kp  LSHFT    &kp  Z     &kp  X      &kp  C      &kp  V     &kp  B             &kp  DEL    &kp  PG_DN    &kp  PG_UP  &kp  HOME             &kp  N   &kp  M     &kp  COMMA  &kp  DOT   &kp  SLASH    &kp  ENTER
-&kp  LCTRL    &kp LALT   &kp  LMETA  &kp  LALT                       &kp LMETA &kp  SPACE  &mo  LOWER    &mo  RAISE  &kp  BSPC &kp  RALT                       &kp  LEFT   &kp  DOWN  &kp  UP       &kp  RIGHT
-                        >;
-                };
-
                 mac_layer {
 /* QWERTY
  * .----------------------------------------------------------------------------------------------------------------------------------.
@@ -243,5 +208,41 @@
 &trans           &trans   &trans   &trans                    &trans  &trans  &trans  &trans  &trans  &trans                       &trans     &trans     &trans  &trans
                         >;
                 };
+
+
+
+/* QWERTY
+ * .----------------------------------------------------------------------------------------------------------------------------------.
+ * |  `   |   1  |   2  |   3  |   4  |   5  |                                              |   6  |   7  |   8  |   9  |   0  | PScr |
+ * |-------------+------+------+------+------+------+------+-------+-+-------+-------+------+------+------+------+------+------+------|
+ * | ESC  |   Q  |   W  |   E  |   R  |   T  |                                              |   Y  |   U  |   I  |   O  |   P  |  \   |
+ * |-------------+------+------+------+------+------+------+-------+-+-------+-------+------+------+------+------+------+------+------|
+ * | Tab  |   A  |   S  |   D  |   F  |   G  |                                              |   H  |   J  |   K  |   L  |   ;  |  '   |
+ * |-------------+------+------+------+------+------+------+-------+-+-------+-------+------+------+------+------+------+------+------|
+ * | Shift|   Z  |   X  |   C  |   V  |   B  |      | Del  | PGDN  | | PGUP  | Home  |      |   N  |   M  |   ,  |   .  |   /  | Shift|
+ * |-------------+------+------+------+------+------+------+-------+-+-------+-------+------+------+------+------+------+------+------|
+ * | Ctrl | Alt  | Meta | Alt  |             | Meta | Space| Lower | | Raise | Enter | RAlt |             | LEFT | DOWN | UP   | RIGHT|
+ * .----------------------------------------------------------------------------------------------------------------------------------.
+ */
+                /*hyper_layer {
+
+                        bindings = <
+&trans        &trans     &trans      &trans      &trans      &trans                                                                         &trans   &trans     &trans      &trans     &trans        &none
+&trans        &trans     &kp HYPR(W) &trans      &trans      &trans                                                                         &trans   &trans     &trans      &trans     &trans        &none
+&trans        &trans     &trans      &trans      &kp HYPR(F) &trans                                                                         &kp LEFT &kp DOWN   &kp UP      &kp RIGHT  &trans        &none
+&trans        &trans     &trans      &trans      &trans      &trans             &trans      &trans        &trans      &trans                &trans   &trans     &trans      &trans     &trans        &none
+&trans        &trans     &trans      &trans                           &trans    &kp HYPR(SPACE)       &trans        &trans      &trans    &trans                          &trans      &trans     &trans        &none
+                        >;
+                };
+
+                game_layer {
+                        bindings = <
+&kp  GRAVE    &kp  N1    &kp  N2     &kp  N3     &kp  N4    &kp  N5                                                                        &kp  N6  &kp  N7    &kp  N8     &kp  N9    &kp  N0       &kp  PSCRN
+&kp  TAB      &kp  Q     &kp  W      &kp  E      &kp  R     &kp  T                                                                         &kp  Y   &kp  U     &kp  I      &kp  O     &kp  P        &kp  BSLH
+&kp  ESC      &kp  A     &kp  S      &kp  D      &kp  F     &kp  G                                                                         &kp  H   &kp  J     &kp  K      &kp  L     &kp  SEMI     &kp  SQT
+&kp  LSHFT    &kp  Z     &kp  X      &kp  C      &kp  V     &kp  B             &kp  DEL    &kp  PG_DN    &kp  PG_UP  &kp  HOME             &kp  N   &kp  M     &kp  COMMA  &kp  DOT   &kp  SLASH    &kp  ENTER
+&kp  LCTRL    &kp LALT   &kp  LMETA  &kp  LALT                       &kp LMETA &kp  SPACE  &mo  LOWER    &mo  RAISE  &kp  BSPC &kp  RALT                       &kp  LEFT   &kp  DOWN  &kp  UP       &kp  RIGHT
+                        >;
+                };*/
         };
 };
