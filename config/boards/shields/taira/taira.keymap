@@ -109,11 +109,12 @@
  * |      |      |      |      |             |      |      |       | |       |       |      |             |      |      |      |      |
  * .----------------------------------------------------------------------------------------------------------------------------------.
  */
-                        bindings = <&kp FI_ONE_HALF  &none    &none    &none     &none    &none                                                  &none      &none     &none      &none      &none   &none 
-                                    &none            &kp F1   &kp F2   &kp  F3   &kp F4   &none                                                  &kp PG_UP  &kp UP    &kp PG_DN  &kp INS    &none   &none 
-                                    &none            &kp F5   &kp F6   &kp  F7   &kp F8   &none                                                  &kp LEFT   &kp DOWN  &kp RIGHT  &kp DEL    &none   &none 
-                                    &none            &kp F9   &kp F10  &kp  F11  &kp F12  &none          &trans  &trans  &trans  &trans          &none      &none     &none      &none      &none   &none 
-                                    &trans           &trans   &trans   &trans                    &trans  &trans  &trans  &trans  &trans  &trans                       &trans     &trans     &trans  &trans
+                        bindings = <
+&kp FI_ONE_HALF  &none    &none    &none     &none    &none                                                  &none      &none     &none      &none      &none   &none 
+&none            &kp F1   &kp F2   &kp  F3   &kp F4   &none                                                  &kp PG_UP  &kp UP    &kp PG_DN  &kp INS    &none   &none 
+&none            &kp F5   &kp F6   &kp  F7   &kp F8   &none                                                  &kp LEFT   &kp DOWN  &kp RIGHT  &kp DEL    &none   &none 
+&none            &kp F9   &kp F10  &kp  F11  &kp F12  &none          &trans  &trans  &trans  &trans          &none      &none     &none      &none      &none   &none 
+&trans           &trans   &trans   &trans                    &trans  &trans  &trans  &trans  &trans  &trans                       &trans     &trans     &trans  &trans
                         >;
                 };
 
@@ -131,13 +132,7 @@
  * |BT_CLR|      |      |      |             |      |      | Lower | | Raise |       |      |             |      |      |      |BT_CLR|
  * .----------------------------------------------------------------------------------------------------------------------------------.
  */
-                        bindings = <
-&bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 &bt BT_SEL 5                                                                          &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 &bt BT_SEL 5
-&none        &none        &none        &none        &none        &none                                                                                 &none        &none        &none        &none        &none        &none
-&none        &none        &none        &none        &none        &tog GAME                                                                             &none        &none        &none        &none        &none        &none
-&none        &none        &none        &none        &none        &tog MAC                  &none       &none         &none       &none                 &none        &none        &none        &none        &none        &none
-&bt BT_CLR   &none        &none        &none                                     &none     &none       &trans        &trans      &none     &none                                 &none        &none        &none        &bt BT_CLR
-                        >;
+                        bindings = <&bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 &bt BT_SEL 5                                                                          &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 &bt BT_SEL 5 &none        &none        &none        &none        &none        &none                                                                                 &none        &none        &none        &none        &none        &none &none        &none        &none        &none        &none        &tog GAME                                                                             &none        &none        &none        &none        &none        &none &none        &none        &none        &none        &none        &tog MAC                  &none       &none         &none       &none                 &none        &none        &none        &none        &none        &none &bt BT_CLR   &none        &none        &none                                     &none     &none       &trans        &trans      &none     &none                                 &none        &none        &none        &bt BT_CLR>;
                 };
 
                 mac_layer {
