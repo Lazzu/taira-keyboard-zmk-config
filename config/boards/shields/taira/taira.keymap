@@ -39,16 +39,11 @@
 
         macros {
                 md_code: md_code {
-                        label = "md_code";
+                        label = "ZM_MARKDOWN_CODE_BLOCK";
                         compatible = "zmk,behavior-macro";
                         #binding-cells = <0>;
                         bindings
-                                = <&macro_tap &kp FI_GRAVE>
-                                , <&macro_tap &kp FI_GRAVE>
-                                , <&macro_tap &kp FI_GRAVE>
-                                , <&macro_tap &kp FI_GRAVE>
-                                , <&macro_tap &kp FI_GRAVE>
-                                , <&macro_tap &kp FI_GRAVE>
+                                = <&macro_tap &kp FI_GRAVE &kp FI_GRAVE &kp FI_GRAVE &kp FI_GRAVE &kp FI_GRAVE &kp FI_GRAVE>
                                 ;
                 };
         };
