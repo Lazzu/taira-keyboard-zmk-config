@@ -90,8 +90,8 @@
                         bindings = <
 &kp FI_SECT  &kp FI_AT     &kp FI_ACUTE   &kp FI_EURO   &kp FI_DOLLAR  &kp FI_AMPS                                                                  &kp FI_GRAVE  &kp FI_PRCNT  &kp FI_SLASH  &kp FI_STAR  &kp FI_MINUS  &kp DEL
 &trans       &kp FI_EXCL   &kp FI_DQT     &kp FI_QMARK  &kp FI_LPAR    &kp FI_RPAR                                                                  &kp FI_SQT    &kp FI_N7     &kp FI_N8     &kp FI_N9    &kp FI_PLUS   &kp INS
-&trans       &kp FI_HASH   &kp FI_SQT     &kp FI_BSLH   &kp FI_LBRC    &kp FI_RBKT                                                                  &kp FI_DQT    &kp FI_N4     &kp FI_N5     &kp FI_N6    &kp FI_MINUS  &kp PG_UP
-&none        &kp FI_GT     &kp FI_LT      &kp FI_PIPE   &kp FI_LBKT    &kp FI_RBRC             &kp LC(X)  &kp LC(C)  &kp LC(X)  &kp LC(V)           &md_code      &kp FI_N1     &kp FI_N2     &kp FI_N3    &kp FI_EQUAL  &kp PG_DN
+&trans       &kp FI_HASH   &kp FI_SQT     &kp FI_BSLH   &kp FI_LBKT    &kp FI_RBKT                                                                  &kp FI_DQT    &kp FI_N4     &kp FI_N5     &kp FI_N6    &kp FI_MINUS  &kp PG_UP
+&none        &kp FI_GT     &kp FI_LT      &kp FI_PIPE   &kp FI_LBRC    &kp FI_RBRC             &kp LC(X)  &kp LC(C)  &kp LC(X)  &kp LC(V)           &md_code      &kp FI_N1     &kp FI_N2     &kp FI_N3    &kp FI_EQUAL  &kp PG_DN
 &trans       &trans        &kp FI_UMLAUT  &kp FI_CARET                                 &trans  &trans     &trans     &trans     &trans     &trans                               &kp FI_N0     &kp FI_COMMA &kp ENTER     &trans
                         >;
                 };
