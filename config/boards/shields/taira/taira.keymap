@@ -144,11 +144,11 @@
  * .----------------------------------------------------------------------------------------------------------------------------------.
  */
                         bindings = <
-&bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 &bt BT_SEL 5                                                                          &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 &bt BT_SEL 5
-&none        &none        &none        &none        &none        &none                                                                                 &none        &none        &none        &none        &none        &none
-&none        &none        &none        &none        &none        &tog MAC                                                                             &none        &none        &none        &none        &none        &none
-&none        &none        &none        &none        &none        &tog MAC                  &none       &none         &none       &none                 &none        &none        &none        &none        &none        &none
-&bt BT_CLR   &none        &none        &none                                     &none     &none       &trans        &trans      &none     &none                                 &none        &none        &none        &bt BT_CLR
+&bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &bt BT_SEL 5                                                                     &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &bt BT_SEL 5
+&none         &none         &none         &none         &none         &none                                                                            &none         &none         &none         &none         &none         &none
+&none         &none         &none         &none         &none         &tog MAC                                                                         &none         &none         &none         &none         &none         &none
+&none         &none         &none         &none         &none         &tog MAC                  &none       &none         &none       &none            &none         &none         &none         &none         &none         &none
+&bt BT_CLR    &none         &none         &none                                       &none     &none       &trans        &trans      &none     &none                              &none         &none         &none         &bt BT_CLR
                         >;
                 };
 
@@ -167,11 +167,11 @@
  * .----------------------------------------------------------------------------------------------------------------------------------.
  */
                         bindings = <
-&kp ESC     &kp FI_OSX_N1 &kp FI_OSX_N2  &kp FI_OSX_N3  &kp FI_OSX_N4  &kp FI_OSX_N5                                                                      &kp FI_OSX_N6  &kp FI_OSX_N7  &kp FI_OSX_N8     &kp FI_OSX_N9   &kp FI_OSX_N0        &kp PSCRN
-&kp TAB     &kp FI_OSX_Q  &kp FI_OSX_W   &kp FI_OSX_E   &kp FI_OSX_R   &kp FI_OSX_T                                                                       &kp FI_OSX_Y   &kp FI_OSX_U   &kp FI_OSX_I      &kp FI_OSX_O    &kp FI_OSX_P         &kp FI_OSX_TILDE
-&mo MACRAI  &kp FI_OSX_A  &kp FI_OSX_S   &kp FI_OSX_D   &kp FI_OSX_F   &kp FI_OSX_G                                                                       &kp FI_OSX_H   &kp FI_OSX_J   &kp FI_OSX_K      &kp FI_OSX_L    &kp FI_OSX_O_UMLAUT  &kp FI_OSX_A_UMLAUT
-&kp LSHFT   &kp FI_OSX_Z  &kp FI_OSX_X   &kp FI_OSX_C   &kp FI_OSX_V   &kp FI_OSX_B              &kp DEL       &kp PG_DN   &kp PG_UP   &kp HOME           &kp FI_OSX_N   &kp FI_OSX_M   &kp FI_OSX_COMMA  &kp FI_OSX_DOT  &kp FI_OSX_MINUS     &mt RSHFT ENTER
-&kp LCTRL   &kp LALT  &kp LMETA  &mo MACRAI                       &kp ENTER  &kp FI_OSX_SPACE  &mo MACLOW  &mo MACRAI  &kp BSPC  &kp DEL                        &none         &none       &none            &none
+&kp ESC     &kp FI_OSX_N1 &kp FI_OSX_N2  &kp FI_OSX_N3  &kp FI_OSX_N4  &kp FI_OSX_N5                                                                          &kp FI_OSX_N6  &kp FI_OSX_N7  &kp FI_OSX_N8     &kp FI_OSX_N9   &kp FI_OSX_N0        &kp PSCRN
+&kp TAB     &kp FI_OSX_Q  &kp FI_OSX_W   &kp FI_OSX_E   &kp FI_OSX_R   &kp FI_OSX_T                                                                           &kp FI_OSX_Y   &kp FI_OSX_U   &kp FI_OSX_I      &kp FI_OSX_O    &kp FI_OSX_P         &kp FI_OSX_TILDE
+&mo MACRAI  &kp FI_OSX_A  &kp FI_OSX_S   &kp FI_OSX_D   &kp FI_OSX_F   &kp FI_OSX_G                                                                           &kp FI_OSX_H   &kp FI_OSX_J   &kp FI_OSX_K      &kp FI_OSX_L    &kp FI_OSX_O_UMLAUT  &kp FI_OSX_A_UMLAUT
+&kp LSHFT   &kp FI_OSX_Z  &kp FI_OSX_X   &kp FI_OSX_C   &kp FI_OSX_V   &kp FI_OSX_B              &kp DEL           &kp PG_DN   &kp PG_UP   &kp HOME           &kp FI_OSX_N   &kp FI_OSX_M   &kp FI_OSX_COMMA  &kp FI_OSX_DOT  &kp FI_OSX_MINUS     &mt RSHFT ENTER
+&kp LCTRL   &kp LALT      &kp LMETA      &mo MACRAI                                   &kp ENTER  &kp FI_OSX_SPACE  &mo MACLOW  &mo MACRAI  &kp BSPC  &kp DEL                                &none             &none           &none                &none
                         >;
                 };
 
@@ -190,18 +190,18 @@
  * .----------------------------------------------------------------------------------------------------------------------------------.
  */
                         bindings = <
-&kp FI_OSX_SECT  &kp FI_OSX_AT     &kp FI_OSX_ACUTE   &kp FI_OSX_EURO   &kp FI_OSX_DOLLAR  &kp FI_OSX_AMPS                                                                  &kp FI_OSX_GRAVE  &kp FI_OSX_PRCNT  &kp FI_OSX_SLASH  &kp FI_OSX_STAR  &kp FI_OSX_MINUS  &kp DEL
-&trans       &kp FI_OSX_EXCL   &kp FI_OSX_DQT     &kp FI_OSX_QMARK  &kp FI_OSX_LPAR    &kp FI_OSX_RPAR                                                                  &kp FI_OSX_SQT    &kp FI_OSX_N7     &kp FI_OSX_N8     &kp FI_OSX_N9    &kp FI_OSX_PLUS   &kp INS
-&trans       &kp FI_OSX_HASH   &kp FI_OSX_SQT     &kp FI_OSX_BSLH   &kp FI_OSX_LBRC    &kp FI_OSX_RBKT                                                                  &kp FI_OSX_DQT    &kp FI_OSX_N4     &kp FI_OSX_N5     &kp FI_OSX_N6    &kp FI_OSX_MINUS  &kp PG_UP
-&none        &kp FI_OSX_GT     &kp FI_OSX_LT      &kp FI_OSX_PIPE   &kp FI_OSX_LBKT    &kp FI_OSX_RBRC             &kp LG(X)  &kp LG(C)  &kp LG(X)  &kp LG(V)           &md_code_osx      &kp FI_OSX_N1     &kp FI_OSX_N2     &kp FI_OSX_N3    &kp FI_OSX_EQUAL  &kp PG_DN
-&trans       &trans        &kp FI_OSX_UMLAUT  &kp FI_OSX_CARET                                 &trans  &trans     &trans     &trans     &trans     &trans                               &kp FI_OSX_N0     &kp FI_OSX_COMMA &kp ENTER     &trans
+&kp FI_OSX_SECT  &kp FI_OSX_AT    &kp FI_OSX_ACUTE   &kp FI_OSX_EURO   &kp FI_OSX_DOLLAR  &kp FI_OSX_AMPS                                                                  &kp FI_OSX_GRAVE  &kp FI_OSX_PRCNT  &kp FI_OSX_SLASH  &kp FI_OSX_STAR  &kp FI_OSX_MINUS  &kp DEL
+&trans           &kp FI_OSX_EXCL  &kp FI_OSX_DQT     &kp FI_OSX_QMARK  &kp FI_OSX_LPAR    &kp FI_OSX_RPAR                                                                  &kp FI_OSX_SQT    &kp FI_OSX_N7     &kp FI_OSX_N8     &kp FI_OSX_N9    &kp FI_OSX_PLUS   &kp INS
+&trans           &kp FI_OSX_HASH  &kp FI_OSX_SQT     &kp FI_OSX_BSLH   &kp FI_OSX_LBRC    &kp FI_OSX_RBKT                                                                  &kp FI_OSX_DQT    &kp FI_OSX_N4     &kp FI_OSX_N5     &kp FI_OSX_N6    &kp FI_OSX_MINUS  &kp PG_UP
+&none            &kp FI_OSX_GT    &kp FI_OSX_LT      &kp FI_OSX_PIPE   &kp FI_OSX_LBKT    &kp FI_OSX_RBRC             &kp LG(X)  &kp LG(C)  &kp LG(X)  &kp LG(V)           &md_code_osx      &kp FI_OSX_N1     &kp FI_OSX_N2     &kp FI_OSX_N3    &kp FI_OSX_EQUAL  &kp PG_DN
+&trans           &trans           &kp FI_OSX_UMLAUT  &kp FI_OSX_CARET                                         &trans  &trans     &trans     &trans     &trans     &trans                                       &kp FI_OSX_N0     &kp FI_OSX_COMMA &kp ENTER         &trans
                         >;
                 };
 
                 macrai_layer {
 /* 
  * .----------------------------------------------------------------------------------------------------------------------------------.
- * |   ½  |      |      |      |      |      |                                              |      |      |      |      |      |      |
+ * |      |      |      |      |      |      |                                              |      |      |      |      |      |      |
  * |-------------+------+------+------+------+------+------+-------+-+-------+-------+------+------+------+------+------+------+------|
  * |      |  F1  |  F2  |  F3  |  F4  |      |                                              | PGUP |  UP  | PGDW | INS  |      |      |
  * |-------------+------+------+------+------+------+------+-------+-+-------+-------+------+------+------+------+------+------+------|
