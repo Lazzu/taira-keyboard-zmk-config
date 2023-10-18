@@ -9,6 +9,7 @@
 #include <dt-bindings/zmk/outputs.h>
 #include <dt-bindings/zmk/bt.h>
 #include "keys_fi.h"
+#include "fi_osx.h"
 
 #define DEFAULT 0
 #define LOWER   1
@@ -43,6 +44,15 @@
                         #binding-cells = <0>;
                         bindings
                                 = <&macro_tap &kp FI_GRAVE &kp FI_GRAVE &kp FI_GRAVE &kp FI_GRAVE &kp FI_GRAVE &kp FI_GRAVE>
+                                ;
+                };
+
+                md_code_osx: md_code_osx {
+                        label = "ZM_MARKDOWN_CODE_BLOCK_OSX";
+                        compatible = "zmk,behavior-macro";
+                        #binding-cells = <0>;
+                        bindings
+                                = <&macro_tap &kp FI_OSX_GRAVE &kp FI_OSX_GRAVE &kp FI_OSX_GRAVE &kp FI_OSX_GRAVE &kp FI_OSX_GRAVE &kp FI_OSX_GRAVE>
                                 ;
                 };
         };
@@ -157,11 +167,11 @@
  * .----------------------------------------------------------------------------------------------------------------------------------.
  */
                         bindings = <
-&kp ESC     &kp FI_N1 &kp FI_N2  &kp FI_N3  &kp FI_N4  &kp FI_N5                                                                      &kp FI_N6  &kp FI_N7  &kp FI_N8     &kp FI_N9   &kp FI_N0        &kp PSCRN
-&kp TAB     &kp FI_Q  &kp FI_W   &kp FI_E   &kp FI_R   &kp FI_T                                                                       &kp FI_Y   &kp FI_U   &kp FI_I      &kp FI_O    &kp FI_P         &kp FI_TILDE
-&mo MACRAI  &kp FI_A  &kp FI_S   &kp FI_D   &kp FI_F   &kp FI_G                                                                       &kp FI_H   &kp FI_J   &kp FI_K      &kp FI_L    &kp FI_O_UMLAUT  &kp FI_A_UMLAUT
-&kp LSHFT   &kp FI_Z  &kp FI_X   &kp FI_C   &kp FI_V   &kp FI_B              &kp DEL       &kp PG_DN   &kp PG_UP   &kp HOME           &kp FI_N   &kp FI_M   &kp FI_COMMA  &kp FI_DOT  &kp FI_MINUS     &mt RSHFT ENTER
-&kp LCTRL   &kp LALT  &kp LMETA  &mo MACRAI                       &kp ENTER  &kp FI_SPACE  &mo MACLOW  &mo MACRAI  &kp BSPC  &kp DEL                        &none         &none       &none            &none
+&kp ESC     &kp FI_OSX_N1 &kp FI_OSX_N2  &kp FI_OSX_N3  &kp FI_OSX_N4  &kp FI_OSX_N5                                                                      &kp FI_OSX_N6  &kp FI_OSX_N7  &kp FI_OSX_N8     &kp FI_OSX_N9   &kp FI_OSX_N0        &kp PSCRN
+&kp TAB     &kp FI_OSX_Q  &kp FI_OSX_W   &kp FI_OSX_E   &kp FI_OSX_R   &kp FI_OSX_T                                                                       &kp FI_OSX_Y   &kp FI_OSX_U   &kp FI_OSX_I      &kp FI_OSX_O    &kp FI_OSX_P         &kp FI_OSX_TILDE
+&mo MACRAI  &kp FI_OSX_A  &kp FI_OSX_S   &kp FI_OSX_D   &kp FI_OSX_F   &kp FI_OSX_G                                                                       &kp FI_OSX_H   &kp FI_OSX_J   &kp FI_OSX_K      &kp FI_OSX_L    &kp FI_OSX_O_UMLAUT  &kp FI_OSX_A_UMLAUT
+&kp LSHFT   &kp FI_OSX_Z  &kp FI_OSX_X   &kp FI_OSX_C   &kp FI_OSX_V   &kp FI_OSX_B              &kp DEL       &kp PG_DN   &kp PG_UP   &kp HOME           &kp FI_OSX_N   &kp FI_OSX_M   &kp FI_OSX_COMMA  &kp FI_OSX_DOT  &kp FI_OSX_MINUS     &mt RSHFT ENTER
+&kp LCTRL   &kp LALT  &kp LMETA  &mo MACRAI                       &kp ENTER  &kp FI_OSX_SPACE  &mo MACLOW  &mo MACRAI  &kp BSPC  &kp DEL                        &none         &none       &none            &none
                         >;
                 };
 
@@ -180,11 +190,11 @@
  * .----------------------------------------------------------------------------------------------------------------------------------.
  */
                         bindings = <
-&kp FI_SECT  &kp FI_AT     &kp FI_ACUTE   &kp FI_EURO   &kp FI_DOLLAR  &kp FI_AMPS                                                                  &kp FI_GRAVE  &kp FI_PRCNT  &kp FI_SLASH  &kp FI_STAR  &kp FI_MINUS  &kp DEL
-&trans       &kp FI_EXCL   &kp FI_DQT     &kp FI_QMARK  &kp FI_LPAR    &kp FI_RPAR                                                                  &kp FI_SQT    &kp FI_N7     &kp FI_N8     &kp FI_N9    &kp FI_PLUS   &kp INS
-&trans       &kp FI_HASH   &kp FI_SQT     &kp FI_BSLH   &kp FI_LBRC    &kp FI_RBKT                                                                  &kp FI_DQT    &kp FI_N4     &kp FI_N5     &kp FI_N6    &kp FI_MINUS  &kp PG_UP
-&none        &kp FI_GT     &kp FI_LT      &kp FI_PIPE   &kp FI_LBKT    &kp FI_RBRC             &kp LG(X)  &kp LG(C)  &kp LG(X)  &kp LG(V)           &md_code      &kp FI_N1     &kp FI_N2     &kp FI_N3    &kp FI_EQUAL  &kp PG_DN
-&trans       &trans        &kp FI_UMLAUT  &kp FI_CARET                                 &trans  &trans     &trans     &trans     &trans     &trans                               &kp FI_N0     &kp FI_COMMA &kp ENTER     &trans
+&kp FI_OSX_SECT  &kp FI_OSX_AT     &kp FI_OSX_ACUTE   &kp FI_OSX_EURO   &kp FI_OSX_DOLLAR  &kp FI_OSX_AMPS                                                                  &kp FI_OSX_GRAVE  &kp FI_OSX_PRCNT  &kp FI_OSX_SLASH  &kp FI_OSX_STAR  &kp FI_OSX_MINUS  &kp DEL
+&trans       &kp FI_OSX_EXCL   &kp FI_OSX_DQT     &kp FI_OSX_QMARK  &kp FI_OSX_LPAR    &kp FI_OSX_RPAR                                                                  &kp FI_OSX_SQT    &kp FI_OSX_N7     &kp FI_OSX_N8     &kp FI_OSX_N9    &kp FI_OSX_PLUS   &kp INS
+&trans       &kp FI_OSX_HASH   &kp FI_OSX_SQT     &kp FI_OSX_BSLH   &kp FI_OSX_LBRC    &kp FI_OSX_RBKT                                                                  &kp FI_OSX_DQT    &kp FI_OSX_N4     &kp FI_OSX_N5     &kp FI_OSX_N6    &kp FI_OSX_MINUS  &kp PG_UP
+&none        &kp FI_OSX_GT     &kp FI_OSX_LT      &kp FI_OSX_PIPE   &kp FI_OSX_LBKT    &kp FI_OSX_RBRC             &kp LG(X)  &kp LG(C)  &kp LG(X)  &kp LG(V)           &md_code_osx      &kp FI_OSX_N1     &kp FI_OSX_N2     &kp FI_OSX_N3    &kp FI_OSX_EQUAL  &kp PG_DN
+&trans       &trans        &kp FI_OSX_UMLAUT  &kp FI_OSX_CARET                                 &trans  &trans     &trans     &trans     &trans     &trans                               &kp FI_OSX_N0     &kp FI_OSX_COMMA &kp ENTER     &trans
                         >;
                 };
 
@@ -203,7 +213,7 @@
  * .----------------------------------------------------------------------------------------------------------------------------------.
  */
                         bindings = <
-&kp FI_ONE_HALF  &none    &none    &none     &none    &none                                                  &none      &none     &none      &none      &none   &none
+&kp FI_OSX_ONE_HALF  &none    &none    &none     &none    &none                                                  &none      &none     &none      &none      &none   &none
 &none            &kp F1   &kp F2   &kp  F3   &kp F4   &none                                                  &kp PG_UP  &kp UP    &kp PG_DN  &kp INS    &none   &none
 &none            &kp F5   &kp F6   &kp  F7   &kp F8   &none                                                  &kp LEFT   &kp DOWN  &kp RIGHT  &kp DEL    &none   &none
 &none            &kp F9   &kp F10  &kp  F11  &kp F12  &none          &trans  &trans  &trans  &trans          &none      &none     &none      &none      &none   &none
